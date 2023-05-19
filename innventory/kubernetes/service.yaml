@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: innventory
+  labels:
+    app: innventory
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+  selector:
+    app: innventory
